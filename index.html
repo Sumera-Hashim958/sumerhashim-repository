@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scal=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Resume Builder</h1>
+
+<!--forms for collect useing data-->
+<form id="resumeForm">    
+    <h2>Personal Information</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <span class="error" id="nameError"></span>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span class="error" id="emailError"></span>
+
+    <label for="profileImage">Profile Picture:</label>
+    <input type="file" id="profileImage" name="profileImage" accept="image/*">
+
+    <h2>Education</h2>
+    <label for="degree">Degree:</label>
+    <input type="text" id="degree" name="degree" required>
+    <span class="error" id="degreeError"></span>
+
+    <label for="institute">Institute:</label>
+    <input type="text" id="institute" name="institute" required>
+    <span class="error" id="institute"></span>
+
+    <label for="gradYear">Passing Year:</label>
+    <input type="number" id="gradYear" name="gradYear" required>
+    <span class="error" id="gradYearError"></span>
+
+    <h2>Work Experience</h2>
+    <label for="company">Company:</label>
+    <input type="text" id="company" name="company" required>
+    <span class="error" id="companyError"></span>
+
+    <label for="role">Role:</label>
+    <input type="text" id="role" name="role" required>
+    <span class="error" id="roleError"></span>
+
+    <label for="yearsWorked">Years Worked:</label>
+    <input type="number" id="yearsWorked" name="yearsWorked" required>
+    <span class="error" id="yearsWorkedError"></span>
+
+    <h2>Skills</h2>
+    <label for="skills">Skills (comma separated):</label>
+    <input type="text" id="skills" name="skills" required>
+    <span class="error" id="skillsError"></span>
+
+    <button type="submit">Generate Resume</button>
+</form>
+
+<!-- Div where the generated resume will be displayed -->
+<div id="resumeOutput"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
